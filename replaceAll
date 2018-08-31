@@ -1,8 +1,0 @@
-   public static String replaceAll(String source, String pattern[], String replace[]) {
-        String Finaly[] = new String[100000000];
-        Finaly[0]=source;
-        for (int i = 0; i < pattern.length; i++) {
-            Finaly[i + 1] = StringUtil.replaceAll(Finaly[i], pattern[i], replace[i]);
-        }
-        return Finaly[pattern.length];
-    }
